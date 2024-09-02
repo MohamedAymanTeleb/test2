@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+
+        /* input:invalid +.para{
+            visibility: visible;
+        }
+        input:valid+.para {
+            visibility: hidden;
+        }
+        input:required{
+            border: 3px solid red;
+        }
+        input:valid{
+            border: 3px solid green;
+        } */
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="input1">Input</label>
+        <input type="text" id="input1" name="input1" placeholder="Enter your input" pattern="[A-Za-z]{3,}" required
+            title="please enter 3 letters at least">
+        <p class="para">Enter valid input</p>
+        <!-- <input type="submit" formaction="" formmethod="" formtarget=""> -->
+         <!-- <select name="sel" id="sel">
+            <option value="">item1</option>
+            <option value="">item1</option>
+            <option value="">item1</option>
+         </select> -->
+
+         <!-- datalist -->
+        
+        <input type="submit">
+    </form>
+    <input type="text" list="data1">
+
+    <datalist id="data1">
+        <option value="qena"></option>
+        <option value="sohag"></option>
+        <option value="cairo"></option>
+      </datalist>
+</body>
+
+</html>
